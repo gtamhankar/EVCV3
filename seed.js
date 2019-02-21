@@ -17,8 +17,8 @@ else
 const db = require('./models');
 
 const users = [
-  { username: 'username', password: 'password' },
-  { username: 'kelvin', password: 'password' },
+  { username: 'test', password: 'test' },
+  { username: 'Mark', password: 'Mark' },
 ];
 
 const polls = [

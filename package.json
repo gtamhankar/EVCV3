@@ -2,11 +2,13 @@
   "name": "evcv3",
   "version": "0.1.0",
   "private": true,
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -16,7 +18,7 @@
     "mongoose": "^5.0.15"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "concurrently \"nodemon server.js\" \"yarn run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
